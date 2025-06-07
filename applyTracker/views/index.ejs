@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApplyTracker | Job Application Dashboard</title>
+</head>
+<body>
+    <h2>Apply Tracker | Track Your Job Application</h2>
+
+    <ul>
+        <% for(let application of applications){ %>
+            <li> <strong> <%= application.company %> </strong> - <b><%= application.position %></b> <a href="/application/<%= application._id %>">Application</a></li>
+            <% } %>
+    </ul>
+
+    <a href="/application/new">Add a New Application</a>
+</body>
+</html>

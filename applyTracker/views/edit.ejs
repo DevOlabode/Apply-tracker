@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= application.company %> Application</title>
+    <style>
+        input, label{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h3>Editing <%= application.company %> Application</h3>
+    <form action="/application/<%= application._id %>?_method=put" method="post">
+
+        <label for="company">Company Name:</label>
+        <input type="text" id="company" name="company" placeholder="Company Name" value="<%= application.company %>">
+
+        <label for="position">Applied Position:</label>
+        <input type="text" id="position" name="position" placeholder="Applied Position" value="<%= application.position %>">
+
+        <label for="status">Application Status:</label>
+        <select name="status" id="status">
+
+         <% for(let dd of status){ %>
+            <option value="<%= dd %>" <%= application.status === dd ? 'selected' : '' %>><%= dd %></option>
+            <% } %>
+        </select>
+
+        <label for="appliedDate">Applied Date: </label>
+        <input type="date" id="appliedDate" name="appliedDate" value="<%= application.appliedDate %>">
+
+        <label for="interviewDate">Interview Date (If there is any): </label>
+        <input type="date" id="interviewDate" name="interviewDate" value="<%= application.appliedDate %>">
+
+        <label for="notes">Notes:</label>
+        <textarea name="notes" id="notes" name="notes" rows="10" cols="30">
+            <%= application.notes %>
+        </textarea>
+
+        <button>Submit</button>
+    </form>
+
+    <a href="/application">Cancel Edit</a>
+</body>
+</html>

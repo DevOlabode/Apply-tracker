@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= findApplication.position %> Application</title>
+</head>
+<body>
+    <h3> <i> <%= findApplication.company %> </i> Application. </h3>
+
+    <ul>
+        <li>Company : <b><%= findApplication.company %></b></li>
+        <li>position : <b><%= findApplication.position %></b></li>
+        <li>Status : <b><%= findApplication.status %></b></li>
+        <li>applied Date : <b><%= findApplication.appliedDate %></b></li>
+
+        <% if(findApplication.interviewDate !== '' ){ %>
+            <li>interview Date : <b><%= findApplication.interviewDate %></b></li>
+        <% } %>
+
+        <li>Notes : <b><%= findApplication.notes %></b></li>
+    </ul>
+
+    <a href="/application/<%= findApplication._id %>/edit">Edit Application</a>
+    <a href="/application">All Application</a>
+
+    <form action="/application/<%= findApplication._id %>?_method=delete" method="post">
+        <button>Delete Application</button>
+    </form>
+</body>
+</html>
