@@ -95,11 +95,6 @@ const applicationSchema = new mongoose.Schema({
 
 ---
 
-## 🖼️ Screenshots (Optional)
-> Add screenshots of the homepage, add/edit form, and application detail pages here if you'd like.
-
----
-
 ## ✨ Future Improvements
 
 - 🔐 Add user authentication for personalized tracking
