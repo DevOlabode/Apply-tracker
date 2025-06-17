@@ -100,7 +100,7 @@ const applicationSchema = new mongoose.Schema({
 - 🔐 Add user authentication for personalized tracking
 - 📊 Add filters/sorting (e.g. by status or date)
 - 💬 Add contact person info or links to job posts
-- 📱 Make UI more responsive with TailwindCSS or Bootstrap
+- 📱 Make UI more responsive with Bootstrap
 
 ---
 
