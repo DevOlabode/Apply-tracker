@@ -68,8 +68,8 @@ const applicationSchema = new mongoose.Schema({
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/yourusername/job-tracker.git
-   cd job-tracker
+   git clone https://github.com/yourusername/Apply-tracker.git
+   cd applyTracker
    ```
 
 2. **Install dependencies**
