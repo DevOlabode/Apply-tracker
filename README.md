@@ -68,7 +68,7 @@ const applicationSchema = new mongoose.Schema({
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/yourusername/Apply-tracker.git
+   git clone https://github.com/DevOlabode/Apply-tracker.git
    cd applyTracker
    ```
 
