@@ -27,7 +27,7 @@ ApplyTracker is a simple yet powerful full-stack CRUD web app that helps job see
 ## 📁 Folder Structure
 
 ```
-job-tracker/
+applyTracker/
 ├── models/
 │   └── apply.js
 ├── views/
@@ -36,8 +36,6 @@ job-tracker/
 │       ├── new.ejs
 │       ├── edit.ejs
 │       └── details.ejs
-├── routes/
-│   └── (optional if abstracting routes)
 ├── seed.js
 ├── index.js
 ├── package.json
